@@ -2088,13 +2088,16 @@ var StyledTitle = styled("div")(templateObject_2$a || (templateObject_2$a = __ma
 });
 var StyledTitlePink = styled("div")(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  font-family: 'Orbitron';\n  font-size: 24px;\n  color: #ef0e58;\n"], ["\n  font-family: 'Orbitron';\n  font-size: 24px;\n  color: #ef0e58;\n"])));
 var Logo$1 = function (_a) {
-    var isPushed = _a.isPushed, togglePush = _a.togglePush; _a.isDark; var href = _a.href;
+    var isPushed = _a.isPushed, togglePush = _a.togglePush; _a.isDark; var isMobile = _a.isMobile, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
         React.createElement(Icon$q, { className: "mobile-icon" }),
-        React.createElement(StyledTitle, null, "POLYVALENT"),
-        React.createElement(StyledTitlePink, null, "."),
-        React.createElement(StyledTitle, null, "FINANCE")));
+        isMobile ? React.createElement(React.Fragment, null,
+            React.createElement(StyledTitle, null, "P"),
+            React.createElement(StyledTitlePink, null, "V")) : React.createElement(React.Fragment, null,
+            React.createElement(StyledTitle, null, "POLYVALENT"),
+            React.createElement(StyledTitlePink, null, "."),
+            React.createElement(StyledTitle, null, "FINANCE"))));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$L, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$K, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
@@ -2693,7 +2696,7 @@ var Menu = function (_a) {
     var homeLink = links.find(function (link) { return link.label === "Home"; });
     return (React.createElement(Wrapper$1, null,
         React.createElement(StyledNav, { showMenu: showMenu },
-            React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
+            React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, isMobile: isMobile, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React.createElement(Flex, null,
                 React.createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile }))),
