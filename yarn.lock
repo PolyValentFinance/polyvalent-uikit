@@ -1278,6 +1278,11 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
+"@fontsource/orbitron@^4.4.5":
+  "integrity" "sha512-qoH8Pz2zWrU/UF0z1L21BwNXzGCn81k8BVl9n4lfC6R7vOI48xK1GC4Iw1ypAMR5TH/TlGE7O9KeV2MJItYqjg=="
+  "resolved" "https://registry.npmjs.org/@fontsource/orbitron/-/orbitron-4.4.5.tgz"
+  "version" "4.4.5"
+
 "@icons/material@^0.2.4":
   "integrity" "sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw=="
   "resolved" "https://registry.npmjs.org/@icons/material/-/material-0.2.4.tgz"
