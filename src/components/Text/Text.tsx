@@ -21,6 +21,7 @@ const Text = styled.div<TextProps>`
   font-weight: ${({ bold }) => (bold ? 600 : 400)};
   line-height: 1.5;
   ${({ textTransform }) => textTransform && `text-transform: ${textTransform};`}
+  ${({ fontFamily }) => fontFamily && `font-family: ${fontFamily};`}
   ${space}
 `;
 
