@@ -33,7 +33,8 @@ const MenuEntry = styled.div<Props>`
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
-
+  font-family: 'Orbitron', 'Kanit', sans-serif;
+  
   a {
     display: flex;
     align-items: center;
