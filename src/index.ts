@@ -1,3 +1,4 @@
+import "@fontsource/orbitron";
 // Components
 export * from "./components/Alert";
 export * from "./components/Breadcrumbs";

@@ -2,6 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+require('@fontsource/orbitron');
 var React = require('react');
 var styled = require('styled-components');
 var styledSystem = require('styled-system');
