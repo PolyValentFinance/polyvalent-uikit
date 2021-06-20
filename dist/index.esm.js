@@ -1,3 +1,4 @@
+import '@fontsource/orbitron';
 import React, { Children, isValidElement, cloneElement, useRef, useEffect, useState, useMemo, useReducer, useCallback, createContext, useContext } from 'react';
 import styled, { keyframes, css, useTheme, createGlobalStyle } from 'styled-components';
 import { space, flexbox, layout } from 'styled-system';
