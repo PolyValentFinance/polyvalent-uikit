@@ -27,6 +27,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   z-index: 11;
   overflow: ${({ isPushed }) => (isPushed ? "initial" : "hidden")};
   transform: translate3d(0, 0, 0);
+  font-family: 'Orbitron', 'Kanit', sans-serif;
 
   ${({ theme }) => theme.mediaQueries.nav} {
     border-right: 2px solid rgba(133, 133, 133, 0.1);

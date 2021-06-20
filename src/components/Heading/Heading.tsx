@@ -20,7 +20,8 @@ const style = {
 const Heading = styled(Text).attrs({ bold: true })<HeadingProps>`
   ${({ size }) => style[size || sizes.MD]}
   font-weight:600;
-  line-height: 1.5;
+  line-height: 1.5; 
+  font-family: 'Orbitron', 'Kanit', sans-serif;
 `;
 
 Heading.defaultProps = {
