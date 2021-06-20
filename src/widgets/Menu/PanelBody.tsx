@@ -20,6 +20,7 @@ const Container = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
+  font-family: 'Orbitron', 'Kanit', sans-serif;
 `;
 
 const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
