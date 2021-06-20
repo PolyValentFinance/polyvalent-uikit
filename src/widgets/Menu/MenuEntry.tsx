@@ -21,6 +21,7 @@ const LinkLabel = styled.div<{ isPushed: boolean }>`
   color: ${({ isPushed, theme }) => (isPushed ? theme.colors.textSubtle : "transparent")};
   transition: color 0.4s;
   flex-grow: 1;
+  font-family: 'Orbitron';
 `;
 
 const MenuEntry = styled.div<Props>`
@@ -34,7 +35,7 @@ const MenuEntry = styled.div<Props>`
   color: ${({ theme }) => theme.colors.textSubtle};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
   font-family: 'Orbitron', 'Kanit', sans-serif;
-  
+
   a {
     display: flex;
     align-items: center;
