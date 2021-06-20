@@ -2318,7 +2318,7 @@ var MenuLink = function (_a) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : reactRouterDom.NavLink;
     var props = isHttpLink ? { href: href, target: isHttpLink ? "_blank" : "", rel: "noopener noreferrer" } : { to: href };
-    return React__default['default'].createElement(Tag, __assign({}, props, otherProps, { style: { fontFamily: "Orbitron" } }));
+    return React__default['default'].createElement(Tag, __assign({}, props, otherProps, { style: { fontFamily: "'Orbitron'" } }));
 };
 
 var Icons = IconModule;
