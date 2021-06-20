@@ -36,7 +36,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const innerLogo = (
     <>
       <LogoIcon className="mobile-icon" />
-      <LogoWithText className="desktop-icon" isDark={isDark} />
+      <h1 style={{ fontFamily: "Orbitron"}}>POLYVALENT</h1><h1 style={{ fontFamily: "Orbitron", color: "#ef0e58"}}>.</h1><h1 style={{ fontFamily: "Orbitron"}}>FINANCE</h1>
     </>
   );
 
