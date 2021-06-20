@@ -31,12 +31,24 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const StyledTitle = styled("div")`
+  font-family: 'Orbitron';
+  font-size: 24px;
+  color: ${({ theme }) => theme.colors.text}
+`
+
+const StyledTitlePink = styled("div")`
+  font-family: 'Orbitron';
+  font-size: 24px;
+  color: #ef0e58;
+`
+
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
       <LogoIcon className="mobile-icon" />
-      <h1 style={{ fontFamily: "Orbitron"}}>POLYVALENT</h1><h1 style={{ fontFamily: "Orbitron", color: "#ef0e58"}}>.</h1><h1 style={{ fontFamily: "Orbitron"}}>FINANCE</h1>
+      <StyledTitle>POLYVALENT</StyledTitle><StyledTitlePink>.</StyledTitlePink><StyledTitle>FINANCE</StyledTitle>
     </>
   );
 
