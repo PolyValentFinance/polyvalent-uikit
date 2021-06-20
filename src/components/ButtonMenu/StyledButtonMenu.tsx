@@ -14,10 +14,10 @@ const StyledButtonMenu = styled.div<{ variant: Variants }>`
   background-color: ${getBackgroundColor};
   border-radius: 16px;
   display: inline-flex;
-
   & > button + button,
   & > a + a {
     margin-left: 2px; // To avoid focus shadow overlap
+    font-family: 'Orbitron';
   }
 `;
 
