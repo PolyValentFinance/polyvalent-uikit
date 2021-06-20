@@ -10,6 +10,7 @@ interface Props {
   isPushed: boolean;
   isDark: boolean;
   togglePush: () => void;
+  isMobile: boolean;
   href: string;
 }
 
@@ -43,12 +44,13 @@ const StyledTitlePink = styled("div")`
   color: #ef0e58;
 `
 
-const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
+const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, isMobile, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
       <LogoIcon className="mobile-icon" />
-      <StyledTitle>POLYVALENT</StyledTitle><StyledTitlePink>.</StyledTitlePink><StyledTitle>FINANCE</StyledTitle>
+      {isMobile ? <><StyledTitle>P</StyledTitle><StyledTitlePink>V</StyledTitlePink></> : <><StyledTitle>POLYVALENT</StyledTitle><StyledTitlePink>.</StyledTitlePink><StyledTitle>FINANCE</StyledTitle></>}
+     
     </>
   );
 
